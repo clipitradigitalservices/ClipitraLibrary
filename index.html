@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clipitra Library Management System - Login Portal">
+    <title>Clipitra - Library Management System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+        <div class="floating-shape shape-5"></div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Logo -->
+        <div class="brand">
+            <div class="logo-icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="4" y="6" width="6" height="20" rx="1.5" fill="white" opacity="0.9"/>
+                    <rect x="13" y="4" width="6" height="24" rx="1.5" fill="white"/>
+                    <rect x="22" y="8" width="6" height="16" rx="1.5" fill="white" opacity="0.8"/>
+                </svg>
+            </div>
+            <span class="logo-text">Clipitra</span>
+        </div>
+        <p class="tagline">Library Management System</p>
+
+        <!-- Login Portals -->
+        <div class="portals-grid">
+            <!-- Admin Portal -->
+            <div class="portal-card portal-admin">
+                <div class="portal-glow"></div>
+                <div class="portal-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <circle cx="24" cy="18" r="8" stroke="currentColor" stroke-width="2.5"/>
+                        <path d="M8 42C8 34.268 14.268 28 22 28H26C33.732 28 40 34.268 40 42" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M32 14L36 18L32 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M36 18H30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="portal-title">Library Admin</h3>
+                <p class="portal-desc">Your all-in-one dashboard to manage students, seats, plans, attendance, payments, and staff — powered by QR-based check-ins, real-time revenue tracking, and role-based access for seamless daily operations.</p>
+                <ul class="portal-features">
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Student, Seat & Plan Management
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        QR Attendance & Payment Tracking
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Revenue Reports & Staff Control
+                    </li>
+                </ul>
+                <a href="https://librarydemo.gt.tc//institute/login.php" class="portal-btn portal-btn-admin" id="admin-login-btn">
+                    Login as Admin
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M6 10H14M14 10L10 6M14 10L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Student Portal -->
+            <div class="portal-card portal-student">
+                <div class="portal-glow"></div>
+                <div class="portal-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <path d="M24 6L42 16L24 26L6 16L24 6Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                        <path d="M12 20V32C12 32 16 38 24 38C32 38 36 32 36 32V20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M42 16V30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="portal-title">Student Portal</h3>
+                <p class="portal-desc">Your personal study hub — view your seat allocation, track attendance via QR scan, check plan validity, monitor payment history, and stay updated on upcoming due dates.</p>
+                <ul class="portal-features">
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        QR Attendance & Seat Details
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Plan Validity & Payment History
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Due Date Alerts & Profile
+                    </li>
+                </ul>
+                <a href="https://librarydemo.gt.tc//student/login.php" class="portal-btn portal-btn-student" id="student-login-btn">
+                    Login as Student
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M6 10H14M14 10L10 6M14 10L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <p class="footer-text">&copy; 2026 Clipitra. All rights reserved.</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
