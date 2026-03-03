@@ -1,115 +1,1074 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Clipitra Library Management System - Login Portal">
-    <title>Clipitra - Library Management System</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Animated Background -->
-    <div class="bg-animation">
-        <div class="floating-shape shape-1"></div>
-        <div class="floating-shape shape-2"></div>
-        <div class="floating-shape shape-3"></div>
-        <div class="floating-shape shape-4"></div>
-        <div class="floating-shape shape-5"></div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Clipitra Library Management System – A complete platform for study libraries and reading rooms. Manage students, seats, attendance, payments, and more."
+    />
+    <title>Clipitra – Library Management System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">
+          <span class="logo-icon"><i class="fas fa-book-open-reader"></i></span>
+          <span class="logo-text">Clipitra</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#modules">Modules</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact" class="nav-cta">Get Started</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Logo -->
-        <div class="brand">
-            <div class="logo-icon">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                    <rect x="4" y="6" width="6" height="20" rx="1.5" fill="white" opacity="0.9"/>
-                    <rect x="13" y="4" width="6" height="24" rx="1.5" fill="white"/>
-                    <rect x="22" y="8" width="6" height="16" rx="1.5" fill="white" opacity="0.8"/>
-                </svg>
-            </div>
-            <span class="logo-text">Clipitra</span>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="hero-grid"></div>
+      </div>
+      <div class="container hero-container">
+        <div class="hero-content" data-animate="fade-up">
+          <span class="hero-badge"
+            ><i class="fas fa-bolt"></i> Next-Gen Library Management</span
+          >
+          <h1>
+            Smart Library<br />
+            <span class="gradient-text">Management System</span>
+          </h1>
+          <p class="hero-description">
+            A complete platform for study libraries and reading rooms.
+            Manage students, seats, attendance, payments, and subscriptions —
+            all from one powerful dashboard.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <span>Start Free Trial</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#features" class="btn btn-outline btn-lg">
+              <i class="fas fa-play-circle"></i>
+              <span>Explore Features</span>
+            </a>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-item"><i class="fas fa-shield-alt"></i> Secure & Reliable</div>
+            <div class="trust-item"><i class="fas fa-bolt"></i> Fast Setup</div>
+            <div class="trust-item"><i class="fas fa-headset"></i> Dedicated Support</div>
+            <div class="trust-item"><i class="fas fa-mobile-alt"></i> Mobile Friendly</div>
+          </div>
         </div>
-        <p class="tagline">Library Management System</p>
-
-        <!-- Login Portals -->
-        <div class="portals-grid">
-            <!-- Admin Portal -->
-            <div class="portal-card portal-admin">
-                <div class="portal-glow"></div>
-                <div class="portal-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                        <circle cx="24" cy="18" r="8" stroke="currentColor" stroke-width="2.5"/>
-                        <path d="M8 42C8 34.268 14.268 28 22 28H26C33.732 28 40 34.268 40 42" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-                        <path d="M32 14L36 18L32 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M36 18H30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3 class="portal-title">Library Admin</h3>
-                <p class="portal-desc">Your all-in-one dashboard to manage students, seats, plans, attendance, payments, and staff — powered by QR-based check-ins, real-time revenue tracking, and role-based access for seamless daily operations.</p>
-                <ul class="portal-features">
-                    <li>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        Student, Seat & Plan Management
-                    </li>
-                    <li>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        QR Attendance & Payment Tracking
-                    </li>
-                    <li>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        Revenue Reports & Staff Control
-                    </li>
-                </ul>
-                <a href="https://librarydemo.gt.tc//institute/login.php" class="portal-btn portal-btn-admin" id="admin-login-btn">
-                    Login as Admin
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M6 10H14M14 10L10 6M14 10L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </a>
+        <div class="hero-visual" data-animate="fade-left">
+          <div class="dashboard-preview">
+            <div class="preview-header">
+              <div class="preview-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="preview-title">Clipitra Dashboard</span>
             </div>
-
-            <!-- Student Portal -->
-            <div class="portal-card portal-student">
-                <div class="portal-glow"></div>
-                <div class="portal-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                        <path d="M24 6L42 16L24 26L6 16L24 6Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
-                        <path d="M12 20V32C12 32 16 38 24 38C32 38 36 32 36 32V20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M42 16V30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-                    </svg>
+            <div class="preview-body">
+              <div class="preview-sidebar">
+                <div class="sidebar-item active">
+                  <i class="fas fa-th-large"></i>
                 </div>
-                <h3 class="portal-title">Student Portal</h3>
-                <p class="portal-desc">Your personal study hub — view your seat allocation, track attendance via QR scan, check plan validity, monitor payment history, and stay updated on upcoming due dates.</p>
-                <ul class="portal-features">
-                    <li>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        QR Attendance & Seat Details
-                    </li>
-                    <li>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        Plan Validity & Payment History
-                    </li>
-                    <li>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        Due Date Alerts & Profile
-                    </li>
-                </ul>
-                <a href="https://librarydemo.gt.tc//student/login.php" class="portal-btn portal-btn-student" id="student-login-btn">
-                    Login as Student
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M6 10H14M14 10L10 6M14 10L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </a>
+                <div class="sidebar-item">
+                  <i class="fas fa-user-graduate"></i>
+                </div>
+                <div class="sidebar-item"><i class="fas fa-chair"></i></div>
+                <div class="sidebar-item">
+                  <i class="fas fa-clipboard-list"></i>
+                </div>
+                <div class="sidebar-item">
+                  <i class="fas fa-credit-card"></i>
+                </div>
+                <div class="sidebar-item"><i class="fas fa-qrcode"></i></div>
+                <div class="sidebar-item"><i class="fas fa-chart-bar"></i></div>
+              </div>
+              <div class="preview-main">
+                <div class="preview-cards">
+                  <div class="p-card p-card-1">
+                    <i class="fas fa-user-graduate"></i>
+                    <div>
+                      <span class="pc-num">1,245</span
+                      ><span class="pc-label">Students</span>
+                    </div>
+                  </div>
+                  <div class="p-card p-card-2">
+                    <i class="fas fa-chair"></i>
+                    <div>
+                      <span class="pc-num">180</span
+                      ><span class="pc-label">Seats</span>
+                    </div>
+                  </div>
+                  <div class="p-card p-card-3">
+                    <i class="fas fa-rupee-sign"></i>
+                    <div>
+                      <span class="pc-num">₹24,500</span
+                      ><span class="pc-label">Today</span>
+                    </div>
+                  </div>
+                  <div class="p-card p-card-4">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                      <span class="pc-num">12</span
+                      ><span class="pc-label">Expiring</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-chart">
+                  <div class="chart-bars">
+                    <div class="bar" style="--h: 60%"></div>
+                    <div class="bar" style="--h: 80%"></div>
+                    <div class="bar" style="--h: 45%"></div>
+                    <div class="bar" style="--h: 90%"></div>
+                    <div class="bar" style="--h: 70%"></div>
+                    <div class="bar" style="--h: 55%"></div>
+                    <div class="bar" style="--h: 85%"></div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="floating-card fc-1" data-animate="float">
+            <i class="fas fa-check-circle"></i>
+            <span>Attendance Marked</span>
+          </div>
+          <div class="floating-card fc-2" data-animate="float">
+            <i class="fas fa-rupee-sign"></i>
+            <span>₹1,500 Received</span>
+          </div>
+          <div class="floating-card fc-3" data-animate="float">
+            <i class="fas fa-user-plus"></i>
+            <span>New Student Added</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-wave">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path
+            d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,60 1440,60 L1440,120 L0,120 Z"
+            fill="var(--bg-secondary)"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES OVERVIEW ============ -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Why Clipitra?</span>
+          <h2>
+            Everything You Need to
+            <span class="gradient-text">Run Your Library</span>
+          </h2>
+          <p>
+            From student onboarding to revenue tracking — manage it all with
+            intelligence and ease.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card" data-animate="fade-up" data-delay="0">
+            <div class="feature-icon">
+              <i class="fas fa-tachometer-alt"></i>
+            </div>
+            <h3>Real-Time Dashboard</h3>
+            <p>
+              Get instant visibility into students, seats, collections, expiring
+              plans, and recent activity — all in one glance.
+            </p>
+          </div>
+          <div class="feature-card" data-animate="fade-up" data-delay="100">
+            <div class="feature-icon"><i class="fas fa-user-graduate"></i></div>
+            <h3>Student Management</h3>
+            <p>
+              Complete lifecycle management with auto-generated IDs, photo
+              uploads, role-based access, and detailed profiles.
+            </p>
+          </div>
+          <div class="feature-card" data-animate="fade-up" data-delay="200">
+            <div class="feature-icon"><i class="fas fa-chair"></i></div>
+            <h3>Smart Seat Allocation</h3>
+            <p>
+              Bulk add seats, track occupancy with a visual grid, enforce
+              subscription limits, and manage seat history.
+            </p>
+          </div>
+          <div class="feature-card" data-animate="fade-up" data-delay="300">
+            <div class="feature-icon">
+              <i class="fas fa-clipboard-list"></i>
+            </div>
+            <h3>Flexible Plan Management</h3>
+            <p>
+              Create hourly, half-day, full-day, or monthly plans. Configure
+              pricing, time slots, and toggle availability.
+            </p>
+          </div>
+          <div class="feature-card" data-animate="fade-up" data-delay="400">
+            <div class="feature-icon"><i class="fas fa-qrcode"></i></div>
+            <h3>QR-Based Attendance</h3>
+            <p>
+              Unique institute QR codes, real-time check-ins, monthly summaries,
+              attendance percentages, and printable reports.
+            </p>
+          </div>
+          <div class="feature-card" data-animate="fade-up" data-delay="500">
+            <div class="feature-icon"><i class="fas fa-credit-card"></i></div>
+            <h3>Payment Tracking</h3>
+            <p>
+              Track collections, pending dues, partial payments, and payment
+              modes — with full search and filter capabilities.
+            </p>
+          </div>
+          <div class="feature-card" data-animate="fade-up" data-delay="600">
+            <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Reports & Analytics</h3>
+            <p>
+              Detailed KPIs, revenue reports with date range filters, seat
+              utilization, and student activity insights.
+            </p>
+          </div>
+          <div class="feature-card" data-animate="fade-up" data-delay="700">
+            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Enterprise Security</h3>
+            <p>
+              Password hashing, CSRF protection, session security, role-based
+              access, XSS prevention, and activity logging.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Simple Setup</span>
+          <h2>
+            Get Started in <span class="gradient-text">4 Easy Steps</span>
+          </h2>
+          <p>From signup to full operation in minutes, not days.</p>
+        </div>
+        <div class="steps-container">
+          <div class="step-line"></div>
+          <div class="step" data-animate="fade-up" data-delay="0">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3>Create Your Institute</h3>
+              <p>
+                Sign up and set up your library profile with subscription plan,
+                seat limits, and basic information.
+              </p>
+            </div>
+            <div class="step-icon"><i class="fas fa-building"></i></div>
+          </div>
+          <div class="step" data-animate="fade-up" data-delay="150">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3>Add Seats & Plans</h3>
+              <p>
+                Bulk-add seats, create flexible pricing plans (hourly, daily,
+                monthly), and configure time slots.
+              </p>
+            </div>
+            <div class="step-icon"><i class="fas fa-cogs"></i></div>
+          </div>
+          <div class="step" data-animate="fade-up" data-delay="300">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3>Enroll Students</h3>
+              <p>
+                Register students with auto-generated IDs, assign plans and
+                seats, and start collecting payments.
+              </p>
+            </div>
+            <div class="step-icon"><i class="fas fa-user-plus"></i></div>
+          </div>
+          <div class="step" data-animate="fade-up" data-delay="450">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <h3>Track & Grow</h3>
+              <p>
+                Monitor attendance via QR, track revenue, view analytics, and
+                scale your operations effortlessly.
+              </p>
+            </div>
+            <div class="step-icon"><i class="fas fa-rocket"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MODULES DEEP DIVE ============ -->
+    <section class="modules" id="modules">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Powerful Modules</span>
+          <h2>
+            Explore the Complete
+            <span class="gradient-text">Feature Suite</span>
+          </h2>
+          <p>
+            Every module is designed to handle a specific operational need with
+            precision.
+          </p>
         </div>
 
-        <p class="footer-text">&copy; 2026 Clipitra. All rights reserved.</p>
-    </main>
+        <!-- Module 1: Dashboard -->
+        <div class="module-row" data-animate="fade-up">
+          <div class="module-visual">
+            <div class="module-mockup dashboard-mockup">
+              <div class="mock-card">
+                <i class="fas fa-users"></i>
+                <div><strong>1,245</strong><small>Total Students</small></div>
+                <span class="mock-badge green">892 Active</span>
+              </div>
+              <div class="mock-card">
+                <i class="fas fa-chair"></i>
+                <div><strong>180</strong><small>Total Seats</small></div>
+                <span class="mock-badge blue">45 Available</span>
+              </div>
+              <div class="mock-card">
+                <i class="fas fa-tags"></i>
+                <div><strong>8</strong><small>Active Plans</small></div>
+                <span class="mock-badge orange">2 Expired</span>
+              </div>
+              <div class="mock-card">
+                <i class="fas fa-rupee-sign"></i>
+                <div>
+                  <strong>₹24,500</strong><small>Today's Collection</small>
+                </div>
+                <span class="mock-badge red">₹3,200 Due</span>
+              </div>
+            </div>
+          </div>
+          <div class="module-info">
+            <div class="module-number">01</div>
+            <h3>Intelligent Dashboard</h3>
+            <p>
+              Get a real-time command center for your library with live metrics
+              covering students, seats, collections, and plan expirations.
+            </p>
+            <ul class="module-features">
+              <li>
+                <i class="fas fa-check"></i> Active student and seat counts
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Today's collection with pending
+                dues
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Expiring plans alert (within 5
+                days)
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Recent students and payment records
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Module 2: Students -->
+        <div class="module-row reverse" data-animate="fade-up">
+          <div class="module-visual">
+            <div class="module-mockup student-mockup">
+              <div class="mock-table">
+                <div class="mt-header">
+                  <span>Name</span><span>Login ID</span><span>Mobile</span
+                  ><span>Status</span>
+                </div>
+                <div class="mt-row">
+                  <span>Rahul Sharma</span><span>LIB-001</span
+                  ><span>98xxx-xx123</span
+                  ><span class="status active">Active</span>
+                </div>
+                <div class="mt-row">
+                  <span>Priya Patel</span><span>LIB-002</span
+                  ><span>97xxx-xx456</span
+                  ><span class="status active">Active</span>
+                </div>
+                <div class="mt-row">
+                  <span>Amit Kumar</span><span>LIB-003</span
+                  ><span>96xxx-xx789</span
+                  ><span class="status inactive">Inactive</span>
+                </div>
+                <div class="mt-row">
+                  <span>Sneha Singh</span><span>LIB-004</span
+                  ><span>95xxx-xx012</span
+                  ><span class="status active">Active</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="module-info">
+            <div class="module-number">02</div>
+            <h3>Student Management</h3>
+            <p>
+              Complete student lifecycle management from registration to plan
+              assignment, all within a role-based access framework.
+            </p>
+            <ul class="module-features">
+              <li>
+                <i class="fas fa-check"></i> Auto-generated login IDs with
+                institute prefix
+              </li>
+              <li><i class="fas fa-check"></i> Photo & ID proof upload</li>
+              <li>
+                <i class="fas fa-check"></i> Plan history & payment history per
+                student
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Admin / Staff / Viewer role-based
+                permissions
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Module 3: Seat Management -->
+        <div class="module-row" data-animate="fade-up">
+          <div class="module-visual">
+            <div class="module-mockup seat-mockup">
+              <div class="seat-grid-preview">
+                <div class="sg-stat">
+                  <span class="sg-total">180</span> Total
+                  <span class="sg-avail">45</span> Free
+                  <span class="sg-occ">135</span> Occupied
+                </div>
+                <div class="seat-grid-visual">
+                  <div class="seat occupied"></div>
+                  <div class="seat occupied"></div>
+                  <div class="seat available"></div>
+                  <div class="seat occupied"></div>
+                  <div class="seat occupied"></div>
+                  <div class="seat available"></div>
+                  <div class="seat available"></div>
+                  <div class="seat occupied"></div>
+                  <div class="seat occupied"></div>
+                  <div class="seat occupied"></div>
+                  <div class="seat available"></div>
+                  <div class="seat occupied"></div>
+                  <div class="seat occupied"></div>
+                  <div class="seat available"></div>
+                  <div class="seat occupied"></div>
+                  <div class="seat occupied"></div>
+                  <div class="seat occupied"></div>
+                  <div class="seat occupied"></div>
+                  <div class="seat occupied"></div>
+                  <div class="seat occupied"></div>
+                  <div class="seat available"></div>
+                  <div class="seat occupied"></div>
+                  <div class="seat available"></div>
+                  <div class="seat occupied"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="module-info">
+            <div class="module-number">03</div>
+            <h3>Seat Management</h3>
+            <p>
+              Structured seat allocation with visual monitoring, bulk
+              operations, and subscription-based enforcement.
+            </p>
+            <ul class="module-features">
+              <li>
+                <i class="fas fa-check"></i> Bulk add seats with prefix + range
+                system
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Visual occupancy grid for quick
+                monitoring
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Seat history & occupant details
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Subscription-based seat limit
+                enforcement
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Module 4: Attendance -->
+        <div class="module-row reverse" data-animate="fade-up">
+          <div class="module-visual">
+            <div class="module-mockup attendance-mockup">
+              <div class="qr-preview">
+                <div class="qr-box">
+                  <div class="qr-pattern">
+                    <i class="fas fa-qrcode"></i>
+                  </div>
+                  <span>Scan to mark attendance</span>
+                </div>
+                <div class="attendance-stats-preview">
+                  <div class="as-item">
+                    <span class="as-num">42</span><span>Present Today</span>
+                  </div>
+                  <div class="as-item">
+                    <span class="as-num">87%</span><span>Monthly Avg</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="module-info">
+            <div class="module-number">04</div>
+            <h3>QR-Based Attendance</h3>
+            <p>
+              Effortless attendance tracking with unique institute QR codes,
+              real-time check-ins, and printable monthly reports.
+            </p>
+            <ul class="module-features">
+              <li>
+                <i class="fas fa-check"></i> Unique institute QR code with
+                direct link
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Daily attendance with real-time
+                present count
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Monthly attendance summary &
+                percentage
+              </li>
+              <li><i class="fas fa-check"></i> Print-friendly reports</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Module 5: Payments -->
+        <div class="module-row" data-animate="fade-up">
+          <div class="module-visual">
+            <div class="module-mockup payment-mockup">
+              <div class="payment-summary-preview">
+                <div class="ps-card">
+                  <i class="fas fa-wallet"></i>
+                  <div>
+                    <strong>₹4,85,000</strong><small>Total Collection</small>
+                  </div>
+                </div>
+                <div class="ps-card warning">
+                  <i class="fas fa-exclamation-circle"></i>
+                  <div><strong>₹32,500</strong><small>Pending Dues</small></div>
+                </div>
+                <div class="ps-card success">
+                  <i class="fas fa-calendar-day"></i>
+                  <div>
+                    <strong>₹24,500</strong><small>Today's Collection</small>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-modes">
+                <span class="pm"
+                  ><i class="fas fa-money-bill-wave"></i> Cash</span
+                >
+                <span class="pm"><i class="fas fa-mobile-alt"></i> UPI</span>
+                <span class="pm"><i class="fas fa-globe"></i> Online</span>
+                <span class="pm"><i class="fas fa-credit-card"></i> Card</span>
+              </div>
+            </div>
+          </div>
+          <div class="module-info">
+            <div class="module-number">05</div>
+            <h3>Payment Management</h3>
+            <p>
+              Complete revenue tracking with support for partial payments,
+              multiple payment modes, and detailed financial records.
+            </p>
+            <ul class="module-features">
+              <li>
+                <i class="fas fa-check"></i> Total, today's, and pending
+                collection at a glance
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Cash, UPI, Online, Card payment
+                modes
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Partial payment support with due
+                tracking
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Search & filter by student, status,
+                date
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Module 6: Reports -->
+        <div class="module-row reverse" data-animate="fade-up">
+          <div class="module-visual">
+            <div class="module-mockup reports-mockup">
+              <div class="report-cards">
+                <div class="rc">
+                  <div class="rc-icon"><i class="fas fa-chart-pie"></i></div>
+                  <span>Overview KPI</span>
+                  <div class="rc-bar">
+                    <div class="rc-fill" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="rc">
+                  <div class="rc-icon"><i class="fas fa-users"></i></div>
+                  <span>Students Report</span>
+                  <div class="rc-bar">
+                    <div class="rc-fill" style="width: 72%"></div>
+                  </div>
+                </div>
+                <div class="rc">
+                  <div class="rc-icon"><i class="fas fa-rupee-sign"></i></div>
+                  <span>Revenue Report</span>
+                  <div class="rc-bar">
+                    <div class="rc-fill" style="width: 91%"></div>
+                  </div>
+                </div>
+                <div class="rc">
+                  <div class="rc-icon"><i class="fas fa-clock"></i></div>
+                  <span>Expiring Soon</span>
+                  <div class="rc-bar">
+                    <div class="rc-fill" style="width: 40%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="module-info">
+            <div class="module-number">06</div>
+            <h3>Reports & Analytics</h3>
+            <p>
+              Data-driven insights to help you make informed decisions about
+              your library's performance and growth.
+            </p>
+            <ul class="module-features">
+              <li>
+                <i class="fas fa-check"></i> KPI overview with progress
+                indicators
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Revenue reports with date range
+                filters
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Seat utilization & student activity
+                %
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Pending dues & expiring plan
+                reports
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ADDITIONAL FEATURES ============ -->
+    <section class="extra-features" id="extra-features">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">And More</span>
+          <h2>Built for <span class="gradient-text">Scale & Security</span></h2>
+          <p>Enterprise-grade features that grow with your institute.</p>
+        </div>
+        <div class="extras-grid">
+          <div class="extra-card" data-animate="fade-up" data-delay="0">
+            <div class="extra-icon-wrap">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h4>Staff Management</h4>
+            <p>
+              Add staff accounts with Staff / Viewer roles. Edit, delete, reset
+              passwords, and enforce role-based permissions.
+            </p>
+          </div>
+          <div class="extra-card" data-animate="fade-up" data-delay="100">
+            <div class="extra-icon-wrap">
+              <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <h4>Subscription & Billing</h4>
+            <p>
+              Manage monthly/yearly plans with Razorpay integration,
+              auto-renewal, invoice generation, and payment history.
+            </p>
+          </div>
+          <div class="extra-card" data-animate="fade-up" data-delay="200">
+            <div class="extra-icon-wrap">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <h4>Plan Assignment</h4>
+            <p>
+              Assign plans with smart validation — auto-calculate end dates,
+              partial payment, seat auto-allocation, and rollback safety.
+            </p>
+          </div>
+          <div class="extra-card" data-animate="fade-up" data-delay="300">
+            <div class="extra-icon-wrap">
+              <i class="fas fa-lock"></i>
+            </div>
+            <h4>Enterprise Security</h4>
+            <p>
+              Bcrypt hashing, CSRF tokens, session regeneration, XSS prevention,
+              prepared statements, and full activity logging.
+            </p>
+          </div>
+          <div class="extra-card" data-animate="fade-up" data-delay="400">
+            <div class="extra-icon-wrap">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h4>Mobile Responsive</h4>
+            <p>
+              Optimized for all screen sizes. Manage your library on-the-go from
+              any device — phone, tablet, or desktop.
+            </p>
+          </div>
+          <div class="extra-card" data-animate="fade-up" data-delay="500">
+            <div class="extra-icon-wrap">
+              <i class="fas fa-database"></i>
+            </div>
+            <h4>Data Integrity</h4>
+            <p>
+              Unique DB constraints, transaction safety with rollback, input
+              validation, and PDO prepared statements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Pricing Plans</span>
+          <h2>
+            Simple, Transparent <span class="gradient-text">Pricing</span>
+          </h2>
+          <p>
+            Choose a plan that fits your library's needs. Upgrade or downgrade
+            anytime.
+          </p>
+        </div>
+        <div class="pricing-toggle" data-animate="fade-up">
+          <span class="toggle-label active" id="monthlyLabel">Monthly</span>
+          <label class="toggle-switch">
+            <input type="checkbox" id="pricingToggle" />
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="toggle-label" id="yearlyLabel"
+            >Yearly <span class="save-badge">Save More</span></span
+          >
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card" data-animate="fade-up" data-delay="0">
+            <div class="pricing-header">
+              <h3>Starter</h3>
+              <p>For small reading rooms</p>
+            </div>
+            <div class="pricing-price">
+              <span class="price-amount monthly-price">₹2,000</span>
+              <span class="price-amount yearly-price" style="display: none"
+                >₹9,999</span
+              >
+              <span class="price-period monthly-price">/month</span>
+              <span class="price-period yearly-price" style="display: none">/year</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Up to 50 students</li>
+              <li><i class="fas fa-check"></i> Up to 30 seats</li>
+              <li><i class="fas fa-check"></i> QR attendance</li>
+              <li><i class="fas fa-check"></i> Payment tracking</li>
+              <li><i class="fas fa-check"></i> Basic reports</li>
+              <li class="disabled">
+                <i class="fas fa-times"></i> Staff management
+              </li>
+              <li class="disabled">
+                <i class="fas fa-times"></i> Priority support
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+          </div>
+          <div
+            class="pricing-card featured"
+            data-animate="fade-up"
+            data-delay="150"
+          >
+            <div class="popular-badge">Best Value</div>
+            <div class="pricing-header">
+              <h3>Enterprise</h3>
+              <p>For large institutions</p>
+            </div>
+            <div class="pricing-price">
+              <span class="price-amount monthly-price">₹3,000</span>
+              <span class="price-amount yearly-price" style="display: none"
+                >₹20,000</span
+              >
+              <span class="price-period monthly-price">/month</span>
+              <span class="price-period yearly-price" style="display: none">/year</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Unlimited students</li>
+              <li><i class="fas fa-check"></i> Unlimited seats</li>
+              <li><i class="fas fa-check"></i> QR attendance</li>
+              <li><i class="fas fa-check"></i> Payment tracking</li>
+              <li><i class="fas fa-check"></i> Custom reports</li>
+              <li><i class="fas fa-check"></i> Staff management</li>
+              <li><i class="fas fa-check"></i> Dedicated RM</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-block"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Testimonials</span>
+          <h2>Loved by <span class="gradient-text">Library Owners</span></h2>
+          <p>
+            Hear from library administrators who've transformed their operations
+            with Clipitra.
+          </p>
+        </div>
+        <div class="testimonials-slider" data-animate="fade-up">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p>
+              "Clipitra completely transformed how we manage our 120-seat
+              reading room. The QR attendance system alone saved us hours
+              daily!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RS</div>
+              <div>
+                <strong>Rajesh Sharma</strong
+                ><span>Owner, Study Hub Jaipur</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p>
+              "The payment tracking and reports module gives me complete
+              visibility into my revenue. I can see pending dues instantly.
+              Highly recommended!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">PA</div>
+              <div>
+                <strong>Priya Agarwal</strong
+                ><span>Manager, Elite Study Zone</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>
+              "We manage 3 branches with different staff roles. The role-based
+              access and staff management features are exactly what we needed."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AK</div>
+              <div>
+                <strong>Amit Kumar</strong
+                ><span>Director, Knowledge Point Libraries</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-card" data-animate="fade-up">
+          <div class="cta-bg-shapes">
+            <div class="cta-shape cta-shape-1"></div>
+            <div class="cta-shape cta-shape-2"></div>
+          </div>
+          <h2>Ready to Modernize Your Library?</h2>
+          <p>
+            Join hundreds of libraries already using Clipitra to streamline
+            their operations and grow their business.
+          </p>
+          <div class="cta-actions">
+            <a href="#contact" class="btn btn-white btn-lg">
+              <span>Start Free Trial</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#features" class="btn btn-glass btn-lg">
+              <i class="fas fa-phone"></i>
+              <span>Schedule Demo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Contact Us</span>
+          <h2>Get In <span class="gradient-text">Touch</span></h2>
+          <p>
+            Have questions? We'd love to hear from you. Send us a message and
+            we'll respond as soon as possible.
+          </p>
+        </div>
+        <div class="contact-grid" data-animate="fade-up">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p>help.clipitradigitalservices@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Address</h4>
+                <p>Clipitra Digital Services LLP, India</p>
+              </div>
+            </div>
+
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" placeholder="Phone Number" />
+            </div>
+            <div class="form-group">
+              <select id="subject">
+                <option value="" disabled selected>Select Subject</option>
+                <option value="demo">Request Demo</option>
+                <option value="pricing">Pricing Inquiry</option>
+                <option value="support">Technical Support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <textarea
+                id="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <span class="logo-icon"
+                ><i class="fas fa-book-open-reader"></i
+              ></span>
+              <span class="logo-text">Clipitra</span>
+            </a>
+            <p>
+              A complete platform for study libraries and reading rooms.
+              Simplify your operations, amplify your growth.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#modules">Modules</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Clipitra Digital Services LLP. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
